@@ -80,7 +80,7 @@ for price in prices:
 
     # checking if it has price or not
     if get_price:
-        price1.append(get_price)
+        price1.append(float(get_price))
     else:
         price1.append(1000.00)
 
