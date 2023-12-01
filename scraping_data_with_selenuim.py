@@ -75,7 +75,7 @@ for element in elements:
 prices = driver.find_elements(By.CSS_SELECTOR, '.price-current')
 for price in prices:
     actual_price = price.get_attribute('textContent')
-    # getting actual price
+    # substituting every character except digits and dot (.) with empty space by using re
     get_price = re.sub(r'[^\d.]', "", actual_price)
 
     # checking if it has price or not
